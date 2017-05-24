@@ -1,0 +1,58 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.show{
+    display: none;
+}
+    .main{
+        width: 960px;
+        height: 760px;
+        border: 1px red solid;
+    }
+.navlist{
+/*background-color: orange;*/
+width: 960px;
+height: 100px;
+border-bottom: 1px red solid;
+}
+.left{
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    background-color: yellow;
+    margin-left: 240px;
+}
+ .center{
+    background-color: orange;
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    margin-left: 480px;
+}
+ .right{
+     background-color: blue;
+    width: 120px;
+    height: 100px;
+    float: right;
+    margin-right: 120px;
+}
+.clearall{
+    clear: both;
+    width: 0;
+    height: 0;
+}
+    .footer{
+        background-color: lightblue;
+        height: 200px;
+        width: 960px;
+    }
+    .footer:nth-child(2n+1){
+        border-right: 1px red solid;
+    }
+    .first, .second, .third, .last{
+        border-right: 1px red solid;
+        width: 239px;
+        height: 200px;
+        float: left;
+    }
