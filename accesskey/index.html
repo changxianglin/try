@@ -3,14 +3,66 @@
     <head>
         <meta charset="utf-8">
         <title>accesskey demo</title>
+        <script type="text/javascript">
+                var toggleHidden = function() {
+                    var elem = document.getElementById("toggle")
+                    if (elem.hasAttribute("hidden")) {
+                        elem.removeAttribute("hidden")
+                    } else {
+                        elem.setAttribute("hidden", "hidden")
+                    }
+                }
+        </script>
     </head>
     <body>
-        <form class="" action="index.html" method="post">
+        <form>
             Name:<input type="text" name="" value="" accesskey="n"/>
             </p>
             Password:<input type="password" name="password" value="" accesskey="p"/>
             </p>
             <input type="submit" name="" value="Log in" accesskey="s"/>
+        </form>
+        <br>
+
+        <br>
+        <p contenteditable="true">It is raining right now</p>
+        <br>
+        <p contentmenu = "true">haha</p>
+        <br>
+        <p dir = "rtl">This is right-to-left</p>
+        <br>
+        <p dir = "lrt">This is left-to-right</p>
+        <br>
+        <button type="button" name="button" onclick="toggleHidden()">Toggle</button>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>Adam Freeman</td>
+                <td>London</td>
+            </tr>
+            <tr id = "toggle" hidden>
+                <td>Joe Simth</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Anne Jones</td>
+                <td>Paris</td>
+            </tr>
+        </table>
+        <br>
+        <textarea name="name" rows="8" cols="80" spellcheck = "true">This is some mispelled text</textarea>
+        <br>
+        <form >
+            <label for="">Name: <input type="text" name="" value="" tabindex "1"></label>
+            </p>
+            <label for="">City: <input type="text" name="" value="" tabindex = "-1"></label>
+            </p>
+            <label for="">Country: <input type="text" name="" value="" tabindex = "2"></label>
+            </p>
+            <input type="text" name="" value="" tabindex = "3">
         </form>
     </body>
 </html>
