@@ -1,0 +1,6 @@
+### 虚拟机 Oracle VM VirtualBox
+### 虚拟机系统 ubuntu-16.10-desktop-i386.iso
+###　技术栈
+* 前端 React 全家桶（webpack, bable, redux, flux）
+* 后端 Node.js 服务器端（express, mongodb, pm2, nginx）
+## https://www.kancloud.cn/winu/electron/154345
