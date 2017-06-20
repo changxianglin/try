@@ -1,4 +1,4 @@
-//  闭包相关的事儿，作用域链，内存
+//  闭包相关的, 作用域链，内存
 var a = function(num1, num2) {
 var b = num1 + num2
     var c = function() {
