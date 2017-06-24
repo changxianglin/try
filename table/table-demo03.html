@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>table-demo03</title>
+        <style media="screen">
+            thead th, tfoot th {
+                text-align: left;
+                background: grey;
+                color: white;
+            }
+            tbody th {
+                text-align: right;
+                background: lightgrey;
+                color: grey;
+            }
+            [colspan], [rowspan] {
+                font-weight: bold;
+                border: medium solid black;
+            }
+            thead [colspan], tfoot [colspan] {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th><th>Name</th><th>Color</th>
+                    <th colspan="2">Size & Votes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Favorite:</th><td>Apples</td><td>Green</td>
+                    <td>Medium</td><td>500</td>
+                </tr>
+                <tr>
+                    <th>2nd Favorite:</th><td>Oranges</td><td>Orange</td>
+                    <td>Large</td><td>450</td>
+                </tr>
+                <tr>
+                    <th>3rd Favorite:</th><td>Peomagranate</td>
+                    <td colspan="2" rowspan="2">
+                    pomegranates and cherries can both come in range of colors and sizes.</td>
+                    <td>203</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Joint 4th:</th>
+                    <td>Chessies</td>
+                    <td rowspan="2">75</td>
+                </tr>
+                <tr>
+                    <td>Pineapple</td>
+                    <td>Brown</td>
+                    <td>Very Large</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5"> & comy; 2011 Adam Freeman Fruite Data Enterprises</th>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
