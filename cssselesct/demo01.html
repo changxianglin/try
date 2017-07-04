@@ -3,20 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title>demo01</title>
-        <style media="screen">
+        <style media="text/css">
         /*#w3canchor {
             border: thin black solid;
             padding: 4px;
         }*/
-        [href] {
+        /*[href] {
+            border: thin black solid;
+            padding: 4px;
+        }*/
+        /*[ class~ = 'class2'] {
+            border: thin black solid;
+            padding: 4px;
+        }*/
+        [lang|='en'] {
             border: thin black solid;
             padding: 4px;
         }
         </style>
     </head>
     <body>
-        <a id = "apressanchor" class = "class1 class2" href="#">Visit the Apress website</a>
-        <p>I like <span class="class2">apples</span> and oranges.</p>
-        <a  id = "w3canchor"  href="#">Visit the W3C website</a>
+        <a lang = "en-us" id = "apressanchor" class = "class1 class2" href="#">Visit the Apress website</a>
+        <p>I like <span lang = "en-gb" class="class2">apples</span> and oranges.</p>
+        <a lang = "en" id = "w3canchor"  href="#">Visit the W3C website</a>
     </body>
 </html>
