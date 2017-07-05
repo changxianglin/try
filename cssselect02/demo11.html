@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>demo11</title>
+        <style media="screen">
+            :in-range {
+                outline: medium solid green;
+            }
+            :out-of-range: {
+                outline: medium solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="" action="httP://titan:8080/form" method="post">
+            <p>
+                <label for="price">
+                    $per unit in your area:
+                    <input type="number" min = "0" max = "100" id = "price" name="price" value="1">
+                </label>
+            </p>
+            <input type="submit" name="" value="Submit">
+        </form>
+    </body>
+</html>
