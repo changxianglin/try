@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>demo08</title>
+        <style media="screen">
+            :checked + span {
+                background-color:red;
+                color: white;
+                padding: 5px;
+                border: medium solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="" action="http://titan:8080/form" method="post">
+            <p>
+                <label for="apples">Do you like apples:</label>
+                <input type="checkbox" id = "apples"  name="apples" value="">
+                <span>This will go red when checked</span>
+            </p>
+            <input type="submit" name="" value="submit">
+        </form>
+    </body>
+</html>
