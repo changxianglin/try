@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>demo13</title>
+        <style>
+            p.toggle {
+                float: left;
+                border: medium solid black;
+                width: 40%;
+                margin: 2px;
+                padding: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <p class = "toggle">
+            There asdfjsaf sdjfkl;asfk
+            sflksadfjdlsajfldsjfkldlf sdjkflasjkdlfas;dkjndsknavk
+            sdfk;sajkdflsajlfkj sdfjkal;sdfjlksajflkjf djkdsjafldjk iwoqeroijsdf
+            fdskdfjlkur weuirowqueor zjj dsafjqej pqeuiu weioji vdij fdsf
+        </p>
+        <p class = "toggle">
+            There asdfjsaf sdjfkl;asfk
+            sflksadfjdlsajfldsjfkldlf sdjkflasjkdlfas;dkjndsknavk
+            sdfk;sajkdflsajlfkj sdfjkal;sdfjlksajflkjf djkdsjafldjk iwoqeroijsdf
+            fdskdfjlkur weuirowqueor zjj dsafjqej pqeuiu weioji vdij fdsf
+        </p>
+        <p>
+            There asdfjsaf sdjfkl;asfk
+            sflksadfjdlsajfldsjfkldlf sdjkflasjkdlfas;dkjndsknavk
+            sdfk;sajkdflsajlfkj sdfjkal;sdfjlksajflkjf djkdsjafldjk iwoqeroijsdf
+            fdskdfjlkur weuirowqueor zjj dsafjqej pqeuiu weioji vdij fdsf
+        </p>
+        <p>
+            <button>Left</button>
+            <button>Right</button>
+            <button>None</button>
+        </p>
+
+        <script>
+            var buttons = document.getElementsByTagName("BUTTON")
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function(e) {
+                    var elements = document.getElementsByClassName('toggle')
+                    for (var j = 0; j < elements.length; j++) {
+                        elements[j].style.cssFloat = e.target.innerHTML
+                        console.log(e.target.innerHTML)
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
