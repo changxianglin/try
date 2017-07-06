@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>demo00</title>
+        <style>
+            #fruittext {
+                width: 400px;
+                margin: 5px;
+                padding: 5px;
+                border: medium double black;
+                background-color: lightgray;
+                white-space: pre-line;
+            }
+        </style>
+    </head>
+    <body>
+        <p id = "fruittext">
+            There are lost of di    ffrence kind of ruite sdjflaksdfk
+            sfdjklajfldsaf
+            sadfkjasldfjsaljflkskruweoerpw
+            sdjfasjdfklsajfoiweuriqoerpo
+            werqiowierweruu sljflkwuroi
+            sfsakdfljasjfsdafsdfjlskadfjlkweruoqweruopqiuouuoi ewqrouoskdlf
+            sdfjlkwqeruoiweruoweuiruxk sdfasdf dfkljlweuqrio xvckxvkzndsk
+        </p>
+        <p>
+            <button>Start</button>
+            <button>End</button>
+            <button>Left</button>
+            <button>Right</button>
+            <button>Justify</button>
+            <button>Center</button>
+        </p>
+        <script>
+            var buttons = document.getElementsByTagName("BUTTON")
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function(e) {
+                    document.getElementById("fruittext").style.textAlign = e.target.innerHTML
+                }
+            }
+        </script>
+    </body>
+</html>
