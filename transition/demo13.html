@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>demo05</title>
+        <style media="screen">
+            #fruittext {
+                padding: 5px;
+                border: medium double black;
+                background-color: lightgray;
+                font-family: sans-serif;
+            }
+            #banana{
+                -webkit-animation-duration: 2500ms;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-timing-function: linear;
+                -webkit-animation-name: 'GrowsShrink' ;
+            }
+            @-webkit-keyframes GrowsShrink {
+                from {
+                    font-size: large;
+                    border: medium solid black;
+                }
+                to {
+                    font-size: x-large;
+                    border: medium solid white;
+                    background-color: green;
+                    color: white;
+                    padding: 4px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p id = "fruittext">
+            There are lots of different kinds of fruit-there are over 500
+            sdflsakf asdfkjksl <span id = "banana">banana</span> sdfklsk sdklfajl xcxzkv sdfjk oij lkljdfkj
+            lxjvklzj kdfj jjjiew <span id = "apple">apples</span>jkjnvx xcd sd sa czxc invxz xckvvj cxkvlk
+        </p>
+        <p>
+            <button>Running</button>
+            <button>Paused</button>
+        </p>
+        <script>
+            var buttons = document.getElementsByTagName("BUTTON")
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function(e) {
+                    document.getElementById('banana').style.webkitAnimationPlayState = e.target.innerHTML
+                }
+            }
+        </script>
+    </body>
+</html>
