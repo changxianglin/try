@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo05 for document.cookie">
+        <title>demo05</title>
+    </head>
+    <body>
+        <p id = "cookiedata">
+
+        </p>
+        <button type="button" name="button" id = "write">Add Cookie</button>
+        <button type="button" name="button" id = "update">update Cookie</button>
+        <script>
+            var cookieCount = 0;
+            document.getElementById('update').onclick = updateCookie;
+            document.getElementById('write').onclick = createCookie;
+            readCookies()
+
+            function readCookies() {
+                document.getElementById('cookiedata').innerHTML = document.cookie
+                console.log("cookie");
+            }
+
+            function createCookie() {
+                 cookieCount++
+                document.cookie = "Cookie_" + cookieCount + "=Value_" + cookieCount
+                readCookies()
+            }
+
+            function updateCookie() {
+                document.cookie = "Cookie_" + cookieCount + "=updated_" + cookieCount
+                readCookies()
+            }
+        </script>
+    </body>
+</html>

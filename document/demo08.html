@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta nam = "description" content="demo08 for document.name element">
+        <title>demo08</title>
+        <style media="screen">
+            pre {
+                border: medium double black;
+            }
+        </style>
+    </head>
+    <body>
+        <pre id = "result"></pre>
+        <img src="demo00.jpg" alt="lemon" id = "lemon">
+        <p id = "fruittext">
+            There are lots of different kinds of fruit - there are over 500
+            varieties of <span id = "banana">banana</span> alone. By the time
+            we add the countless types of apples, oranges, and other well-konw fruit,
+            we are faced with thousand of choices.
+        </p>
+        <img src="demo00.jpg" alt="apple" id = "apple">
+        <button type="button" name="button" id = "pressme"> Press Me</button>
+        <p id = "apples">
+            One of the most interesting aspects of fruit is the
+            variety available in each country. I live near London, in an area which is
+            kown for its apples.
+        </p>
+        <img src="demo00.jpg" alt="" id = "banana">
+        <script>
+            var resultsElement = document.getElementById("result")
+
+            var elems = document["apple"]
+            console.log(elems)
+            if (elems.namedItem) {
+                for (var i = 0; i < elems.length; i++) {
+                    resultsElement.innerHTML += "Image Element: " + elems[i].id + "\n"
+                }
+            } else {
+                resultsElement.innerHTML += "Src for apple element is: " + elems.src + "\n"
+            }
+        </script>
+    </body>
+</html>

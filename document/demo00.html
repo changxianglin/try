@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>demo00</title>
+    </head>
+    <body>
+        <p id = "fruittext">
+            There are lots of different kinds of fruit - there are over 500
+            varieties of <span id = "banana">banana</span> alone. By the time
+            we add the countless types of apples, oranges, and other well-konw fruit,
+            we are faced with thousand of choices.
+        </p>
+        <p id = "apples">
+            One of the most interesting aspects of fruit is the
+            variety available in each country. I live near London, in an area which is
+            kown for its apples.
+        </p>
+        <script>
+            document.writeln("<pre>URL: " + document.URL)
+            var elems = document.getElementsByTagName("p")
+            for (var i = 0; i < elems.length; i++) {
+                document.writeln("Element ID: " + elems[i].id)
+                elems[i].style.border = "medium double black"
+                elems[i].style.padding = "4px"
+            }
+            document.write('</pre>')
+        </script>
+    </body>
+</html>

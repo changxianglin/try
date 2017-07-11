@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo for document.readyState">
+        <title>demo06</title>
+        <script>
+            document.onreadystatechange = function() {
+                if (document.readyState == "interactive") {
+                    document.getElementById('pressme').onclick = function() {
+                        console.log('yes')
+                        document.getElementById('results').innerHTML = "Button Pressed"
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button type="button" name="button" id = "pressme">Press Me</button>
+        <pre id = "results"></pre>
+
+    </body>
+</html>
