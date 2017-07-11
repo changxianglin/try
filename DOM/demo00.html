@@ -13,7 +13,16 @@
             <img src="demo00.jpg" alt="apples">
         </p>
         <script type="text/javascript">
-
+        var images
+        if (document.querySelectorAll) {
+            images = document.querySelectorAll('#paratext > img')
+        } else {
+            images = document.getElementById("paratext").getElementsByTagName('img')
+        }
+        for (var i = 0; i < images.length; i++) {
+            images[i].style.border = "thick solid black"
+            images[i].style.padding = "4px"
+        }
         </script>
     </body>
 </html>
