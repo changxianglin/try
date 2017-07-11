@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo04 for document.history">
+        <title>demo04</title>
+    </head>
+    <body>
+        <button type="button" name="button" id = "back">Bakc</button>
+        <button type="button" name="button" id = "forward">Forward</button>
+        <button type="button" name="button" id = "go">Go</button>
+        <script>
+            var buttons = document.getElementsByTagName("button")
+            console.log("in")
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = handleButtonPress
+            }
+            function handleButtonPress(e) {
+                console.log("j-in")
+                if (e.target.id == "back") {
+                    window.history.back()
+                } else if (e.target.id == "forward") {
+                    window.history.forward()
+                } else if (e.target.id == "go") {
+                    window.history.go("http://www.sina.com.cn")
+                }
+            }
+        </script>
+    </body>
+</html>

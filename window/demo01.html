@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo01 for window.window">
+        <title>demo01</title>
+        <style media="screen">
+            table {
+                border-collapse: collapse;
+                border: thin solid black;
+            }
+            th, td {
+                padding: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th>outerWidth:</th>
+                <td id = "ow"></td>
+                <th>outerHeight:</th>
+                <td id = "oh"></td>
+            </tr>
+            <tr>
+                <th>innerWidth:</th>
+                <td id = "iw"></td>
+                <th>innerHeight:</th>
+                <td id = "ih"></td>
+            </tr>
+            <tr>
+                <th>screen.width:</th>
+                <td id = "sw"></td>
+                <th>screen.height:</th>
+                <td id = "sh"></td>
+            </tr>
+        </table>
+        <script>
+            var d = document
+            d.getElementById("ow").innerHTML = window.outerWidth
+            d.getElementById("oh").innerHTML = window.outerHeight
+            d.getElementById("iw").innerHTML = window.innerHeight
+            d.getElementById("ih").innerHTML = window.innerHeight
+            d.getElementById("sw").innerHTML = window.screen.width
+            d.getElementById("sh").innerHTML = window.screen.height
+        </script>
+    </body>
+</html>

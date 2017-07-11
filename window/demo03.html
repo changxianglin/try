@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="dmeo03 for window.user">
+        <title>demo03</title>
+        <style media="screen">
+            table {
+                border-collapse: collapse;
+                border: thin solid black;
+            }
+            th, td {
+                padding: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" name="button" id = "alert">Alert</button>
+        <button type="button" name="button" id = "confirm">Confirm</button>
+        <button type="button" name="button" id = "prompt">Prompt</button>
+        <button type="button" name="button" id = "modal">Modal Dialog</button>
+        <script>
+            var buttons = document.getElementsByTagName("button")
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = handleButtonPress;
+            }
+
+            function handleButtonPress(e) {
+                if (e.target.id == "alert") {
+                    window.alert("This is an alert")
+                } else if (e.target.id == "confirm") {
+                    var confirmed =
+                    window.confirm("This is an confirm - do you want to proceed?")
+                    alert("confirmed? " + confirmed)
+                } else if (e.target.id == "prompt") {
+                    var response = window.prompt("Enter an word", "hello")
+                    alert("The word was " + response)
+                } else if (e.target.id == "modal") {
+                    window.showModalDialog("http://www.sina.com.cn")
+                }
+            }
+        </script>
+    </body>
+</html>

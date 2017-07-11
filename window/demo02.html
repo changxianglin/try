@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo02 for window.window..">
+        <title>demo05</title>
+    </head>
+    <body>
+        <p>
+            <button type="button" name="button" id = "scroll">Scroll</button>
+            <button type="button" name="button" id = "print">Print</button>
+            <button type="button" name="button" id = "close">Close</button>
+        </p>
+        <p>
+            There are lots of
+        </p>
+        <script>
+            var buttons = document.getElementsByTagName("button")
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = handleButtonPress
+            }
+
+            function handleButtonPress(e) {
+                if (e.target.id == "print") {
+                    window.print()
+                } else if (e.target.id == "close") {
+                    window.close()
+                } else {
+                    window.scrollTo(0, 1000)
+                }
+            }
+        </script>
+    </body>
+</html>

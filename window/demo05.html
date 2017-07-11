@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo05 for window.history..">
+        <title>demo05</title>
+    </head>
+    <body>
+        <p id = "msg"></p>
+        <button type="button" name="button" id = "banana">Banana</button>
+        <button type="button" name="button" id = "apple">Apple</button>
+        <script>
+            var sel = "No selection made"
+            document.getElementById("msg").innerHTML = sel
+
+            var buttons = document.getElementsByTagName("button")
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function(e) {
+                    document.getElementById("msg").innerHTML = e.target.innerHTML
+                }
+            }
+        </script>
+    </body>
+</html>
