@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo06 for History.pushState">
+        <title>demo06</title>
+    </head>
+    <body>
+        <p id = "msg"></p>
+        <button type="button" name="button" id = "banana">Banana</button>
+        <button type="button" name="button" id = "apple">Apple</button>
+        <script type="text/javascript">
+            var sel = "No selection made"
+            if (window.lacation.search == "?banana") {
+                sel = "Selection: Banana"
+            } else if (window.lacation.search == "?apple") {
+                sel = "Selection: Apple"
+            }
+            document.getElementById("msg").innerHTML = sel
+
+            var buttons = document.getElementByTagName("button")
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function(e) {
+                    document.getElementById("msg").innerHTML = e.target.innerHTML
+                    window.history.pushState("", "", "?", + e.target.id)
+                }
+            }
+        </script>
+    </body>
+</html>
