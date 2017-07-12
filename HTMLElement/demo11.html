@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo09 for remove element">
+        <title>demo09</title>
+        <style media="screen">
+            table {
+                border: solid thin black;
+                border-collapse: collapse;
+                margin: 10px;
+                float: left;
+            }
+            td {
+                padding: 4px 5px;
+            }
+            p {
+                clear: left;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Fruit</th>
+                    <th>Color</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Banana</td>
+                    <td>Yellow</td>
+                </tr>
+                <tr id ="apple">
+                    <td>Apple</td>
+                    <td>Red/Green</td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Fruit</th>
+                    <th>Color</th>
+                </tr>
+            </thead>
+            <tbody id = "fruitsBody">
+                <tr>
+                    <td>Plum</td>
+                    <td>Purple</td>
+                </tr>
+                <tr id = "targetrow">
+                    <td colspan="2">This is the placeholder</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <button type="button" name="button" id = "move">Move Row</button>
+        </p>
+        <script>
+            document.getElementById("move").onclick = function() {
+                var source = document.getElementById("apple")
+                var target = document.getElementById("targetrow")
+                target.innerHTML = source.innerHTML
+                source.innerHTML = "<tr id=targetrow><td colspan ='2'>" + "This is the placeholder</td>"
+            }
+        </script>
+    </body>
+</html>

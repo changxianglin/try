@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo01 for htmlelement">
+        <title>demo01</title>
+        <style media="screen">
+            p {
+                border: medium solid black;
+            }
+            p.newclass {
+                background-color: grey;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <p id = "textblock" dir = "ltr" lang = "en-US" class="fruit numbers">
+            There are lots of different kind of fruit-there are over 500 varieties
+            of <span id = "banana">banana</span> alone. By the time we add the countless
+            types of <span id = "apple">apples</span>,
+            <span id = "orange">Oranges</span>, and other well-konw fruit, we are faced
+            with thousands of choices.
+        </p>
+        <button type="button" name="button" id = "pressme">Press Me</button>
+        <script type="text/javascript">
+            document.getElementById("pressme").onclick = function(e) {
+                document.getElementById("textblock").className += " newclass"
+            }
+        </script>
+    </body>
+</html>

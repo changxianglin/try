@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo02 for htmlelement classList">
+        <title>demo02</title>
+        <style media="screen">
+            p {
+                border: medium solid black;
+            }
+            p.newclass {
+                background-color: grey;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <p id = "textblock" dir = "ltr" lang = "en-US" class="fruit numbers">
+            There are lots of different kind of fruit-there are over 500 varieties
+            of <span id = "banana">banana</span> alone. By the time we add the countless
+            types of <span id = "apple">apples</span>,
+            <span id = "orange">Oranges</span>, and other well-konw fruit, we are faced
+            with thousands of choices.
+        </p>
+        <pre id = "results"></pre>
+        <button type="button" name="button" id = "toggle">Toggle Class</button>
+        <script type="text/javascript">
+            var results = document.getElementById("results")
+            document.getElementById("toggle").onclick = toggleClass
+
+            listClasses()
+            function listClasses() {
+                var classlist = document.getElementById("textblock").classList
+                 results.innerHTML = "Current classes:"
+                 for (var i = 0; i < classlist.length; i++) {
+                     results.innerHTML += classlist[i] + " "
+                 }
+            }
+            function toggleClass() {
+                document.getElementById("textblock").classList.toggle("newclass")
+                listClasses()
+            }
+        </script>
+    </body>
+</html>

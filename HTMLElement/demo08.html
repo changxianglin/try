@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "author" content="Zhang Xianglin">
+        <meta name="description" content="Demo07 for dom change">
+        <title>demo07</title>
+        <style media="screen">
+            table {
+                border: solid thin black;
+                border-collapse: collapse;
+                margin: 10px;
+            }
+             td {
+                 padding: 4px 5px;
+             }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Multiply</th>
+                    <th>Results</th>
+                </tr>
+            </thead>
+            <tbody id = "fruitsBody">
+                <tr>
+                    <td class="sum">1 x 1</td>
+                    <td class="result">1</td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" name="button" id = "add">Add Row</button>
+        <script>
+            var tableBody = document.getElementById("fruitsBody")
+
+            document.getElementById("add").onclick = function() {
+                var count = tableBody.getElementsByTagName("tr").length + 1
+                var newElem = tableBody.getElementsByTagName("tr")[0].cloneNode(true)
+
+                newElem.getElementsByClassName("sum")[0].firstChild.data = count + " * " + count
+                newElem.getElementsByClassName("result")[0].firstChild.data = count * count
+
+                tableBody.appendChild(newElem)
+            }
+        </script>
+    </body>
+</html>

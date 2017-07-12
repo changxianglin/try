@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo03 for htmlelement classList">
+        <title>demo02</title>
+        <style media="screen">
+            p {
+                border: medium solid black;
+            }
+            p.newclass {
+                background-color: grey;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <p id = "textblock"  class="fruit numbers">
+            There are lots of different kind of fruit-there are over 500 varieties
+            of <span id = "banana">banana</span> alone. By the time we add the countless
+            types of <span id = "apple">apples</span>,
+            <span id = "orange">Oranges</span>, and other well-konw fruit, we are faced
+            with thousands of choices.
+        </p>
+        <pre id = "results"></pre>
+        <script type="text/javascript">
+            var results = document.getElementById("results")
+            var elem = document.getElementById("textblock")
+
+            results.innerHTML = "Element has lang attribute: " + elem.hasAttribute("lang") + "\n"
+            results.innerHTML += "Adding lang attribute\n"
+            elem.setAttribute("lang", "en-US")
+            results.innerHTML += "Attr values is : " + elem.getAttribute("lang") + "\n"
+            results.innerHTML += "Set new value for lang attribute\n"
+            elem.setAttribute("lang", "en-UK")
+            results.innerHTML += "Values is now: " + elem.getAttribute("lang") + "\n"
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "author" content="Zhang Xianglin">
+        <meta name="description" content="Demo07 for dom change">
+        <title>demo07</title>
+        <style media="screen">
+            table {
+                border: solid thin black;
+                border-collapse: collapse;
+                margin: 10px;
+            }
+             td {
+                 padding: 4px 5px;
+             }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <th>Name</th>
+                <th>Color</th>
+            </thead>
+            <tbody id = "fruitsBody">
+                <tr>
+                    <td>Banana</td>
+                    <td>Yellow</td>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>Red/Green</td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" name="button" id = "add">Add Element</button>
+        <button type="button" name="button" id = "remove">Remove Element</button>
+        <script>
+            var tableBody = document.getElementById("fruitsBody")
+
+            document.getElementById("add").onclick = function() {
+                var row = tableBody.appendChild(document.createElement("tr"))
+                row.setAttribute("id", "newrow")
+                row.appendChild(document.createElement("td")).appendChild(document.createTextNode("Plum"))
+                row.appendChild(document.createElement("td")).appendChild(document.createTextNode("newrow"))
+            }
+
+            document.getElementById("remove").onclick = function() {
+                var row = document.getElementById("newrow")
+                row.parentNode.removeChild(row)
+            }
+        </script>
+    </body>
+</html>
