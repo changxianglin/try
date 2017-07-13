@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo13 for html text">
+        <title>demo13</title>
+    </head>
+    <body>
+        <p id = "textblock">
+            There are lots of differfjsalfdjlsfjldsjl
+            sfdklsa;jflsj sdflkqwrj wioeruqpweui vlksdk
+            weruqoir vknd woerii xcvzxc iwueir li
+            lsirwqeu weirvn erui werii oweiru
+        </p>
+        <p>
+            <button type="button" name="button" id = "insert">Insert Element</button>
+        </p>
+        <script>
+            document.getElementById("insert").onclick = function() {
+                var textBlock = document.getElementById("textblock")
+                textBlock.firstChild.splitText(10)
+                var newText = textBlock.childNodes[1].splitText(4).previousSibling
+                textBlock.insertBefore(document.createElement("b"), newText).appendChild(newText)
+            }
+        </script>
+    </body>
+</html>

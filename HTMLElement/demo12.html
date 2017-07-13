@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo11 for html inserAdjacentHTML">
+        <title>demo12</title>
+    </head>
+    <body>
+        <table id="1">
+            <thead>
+                <tr>
+                    <th>Fruit</th>
+                    <th>Color</th>
+                </tr>
+            </thead>
+            <tbody id="fruitBody">
+                <tr id="targetrow">
+                    <td>Placeholder</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <button type="button" name="button" id = "ab">After Begin</button>
+            <button type="button" name="button" id = "ae">After End</button>
+            <button type="button" name="button" id="bb">Bofore Begin</button>
+            <button type="button" name="button" id="be">Before End</button>
+        </p>
+        <script>
+            var target = document.getElementById("targetrow")
+            var buttons = document.getElementsByTagName("button")
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = handleButtonPress
+            }
+
+            function handleButtonPress(e) {
+                if (e.target.id == "ab") {
+                    target.insertAdjacentHTML("afterbegin", "<td>After Begin</td>")
+                } else if (e.target.id == "be") {
+                    target.insertAdjacentHTML("beforeend", "<td>Before End</td>")
+                } else if (e.target.id == "bb") {
+                    target.insertAdjacentHTML("beforebegin", "<tr><td colspan='2'>Before Begin</td></tr>")
+                } else {
+                    target.insertAdjacentHTML("afterend", "<tr><td colspan='2'>After End</td></tr>")
+                }
+            }
+        </script>
+    </body>
+</html>
