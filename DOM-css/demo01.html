@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="Demo01 for Cssstylesheet.disabled">
+        <title>demo01</title>
+        <style media="screen">
+            p {
+                border: medium double black;
+                background-color: lightgray;
+            }
+            #block1 {
+                color: white;
+                border: thick solid black;
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <p id = "block1">
+            There are lots of different kinds of fruit-there are over 500
+            vaar sdjflkasj saldfjl;sk sdkllfjlskdfj sdlkfjljworueoiqw sldfjlaks
+            slfdjdlskw wiueuior lkdjsflkas oouo xcvzlk sldfjl xclkvl sldfjlk
+            sdf;lkjfs
+        </p>
+        <div><button type="button" name="button" id="pressme">Press Me</button></div>
+        <script>
+            document.getElementById("pressme").onclick = function() {
+                document.styleSheets[0].disabled = !document.styleSheets[0].disabled
+            }
+        </script>
+    </body>
+</html>
