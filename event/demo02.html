@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo02 for event">
+        <title>demo02</title>
+        <style media="screen">
+            p {
+                background: gray;
+                color: white;
+                padding: 10px;
+                margin: 5px;
+                border: thin solid black;
+            }
+        </style>
+        <script type="text/javascript">
+            function handleMouseOver(elem) {
+                elem.style.background = 'white'
+                elem.style.color = 'black'
+            }
+            function handleMouseOut(elem) {
+                elem.style.removeProperty('color')
+                elem.style.removeProperty('background')
+            }
+        </script>
+    </head>
+    <body>
+        <p onmouseover = "handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+            There are lots of different kinds of fruit-there are over
+            500 sfjkd dks ksdjfklal l  ljklj iuewri klsjdfk cdk dlsfj
+            jkldjui iuriw kdnk cd,jj djfks eiruio nmdncjd ierui cjdn
+            cndjnj wrei link uer ji ler jiha cncei cet dur difdi
+        </p>
+        <p onmouseover = "handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+            There are lots of different kinds of fruit-there are over
+            500 sfjkd dks ksdjfklal l  ljklj iuewri klsjdfk cdk dlsfj
+            jkldjui iuriw kdnk cd,jj djfks eiruio nmdncjd ierui cjdn
+            cndjnj wrei link uer ji ler jiha cncei cet dur difdi
+        </p>
+    </body>
+</html>

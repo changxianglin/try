@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo02 for event">
+        <title>demo03</title>
+        <style media="screen">
+            p {
+                background: gray;
+                color: white;
+                padding: 10px;
+                margin: 5px;
+                border: thin solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            There are lots of different kinds of fruit-there are over
+            500 sfjkd dks ksdjfklal l  ljklj iuewri klsjdfk cdk dlsfj
+            jkldjui iuriw kdnk cd,jj djfks eiruio nmdncjd ierui cjdn
+            cndjnj wrei link uer ji ler jiha cncei cet dur difdi
+        </p>
+        <p id = "block2">
+            There are lots of different kinds of fruit-there are over
+            500 sfjkd dks ksdjfklal l  ljklj iuewri klsjdfk cdk dlsfj
+            jkldjui iuriw kdnk cd,jj djfks eiruio nmdncjd ierui cjdn
+            cndjnj wrei link uer ji ler jiha cncei cet dur difdi
+        </p>
+        <button type="button" name="button" id = "pressme">Press Me</button>
+        <script type="text/javascript">
+
+            var pElems = document.getElementsByTagName("p")
+            for (var i = 0; i < pElems.length; i++) {
+                pElems[i].addEventListener("mouseover", handleMouseOver)
+                pElems[i].addEventListener("mouseout", handleMouseOut)
+            }
+
+            document.getElementById("pressme").onclick = function() {
+                document.getElementById("block2").removeEventListener("mouseout", handleMouseOut)
+            }
+
+            function handleMouseOver(e) {
+                e.target.style.background = "white"
+                e.target.style.color = "black"
+            }
+
+            function handleMouseOut(e) {
+                e.target.style.removeProperty('color')
+                e.target.style.removeProperty('background')
+            }
+        </script>
+    </body>
+</html>
