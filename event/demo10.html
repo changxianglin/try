@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Zhang Xianglin">
+        <meta name="description" content="demo09 for keyboradEvent">
+        <title>demo10</title>
+        <style media="screen">
+            p {
+                background: gray;
+                color: white;
+                padding: 10px;
+                margin: 5px;
+                border: thin solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <p>
+                <label for="fave">Fruit: <input id = "fave" name = "fave"></label>
+            </p>
+            <p>
+                <label for="name">Name: <input id = "name" name = "name"></label>
+            </p>
+            <button type="submit">Submit Vote</button>
+            <button type="reset">Reset</button>
+        </form>
+        <span id = "message"></span>
+
+        <script type="text/javascript">
+
+            var inputElems = document.getElementsByTagName("input")
+            for (var i = 0; i < inputElems.length; i++) {
+                inputElems[i].onkeyup = handleKeyboardEvent
+            }
+
+            function handleKeyboardEvent(e) {
+                console.log("13")
+                document.getElementById("message").innerHTML = "Key pressed: " +
+                e.keyCode + " Char: " + String.fromCharCode(e.keyCode)
+            }
+        </script>
+    </body>
+</html>

@@ -13,33 +13,43 @@
                 margin: 5px;
                 border: thin solid black;
             }
+            span {
+                background: white;
+                color: black;
+                padding: 2px;
+                cursor: default;
+            }
         </style>
     </head>
     <body>
-        <p>
+        <p id = "block1">
             There are lots of different kinds of fruit-there are over
             500 sfjkd dks ksdjfklal l  ljklj iuewri klsjdfk cdk dlsfj
             jkldjui iuriw kdnk cd,jj djfks eiruio nmdncjd ierui cjdn
+            <span id = "banana">Banana</span>
             cndjnj wrei link uer ji ler jiha cncei cet dur difdi
         </p>
-        <p id = "block2">
-            There are lots of different kinds of fruit-there are over
-            500 sfjkd dks ksdjfklal l  ljklj iuewri klsjdfk cdk dlsfj
-            jkldjui iuriw kdnk cd,jj djfks eiruio nmdncjd ierui cjdn
-            cndjnj wrei link uer ji ler jiha cncei cet dur difdi
-        </p>
-        <!-- <button type="button" name="button" id = "pressme">Press Me</button> -->
         <script type="text/javascript">
 
-            var pElems = document.getElementsByTagName("p")
-            for (var i = 0; i < pElems.length; i++) {
-                pElems[i].onmouseover = handleMouseEvent
-                pElems[i].onmouseout = handleMouseEvent
+            var banana = document.getElementById("banana")
+            var textblock = document.getElementById("block1")
+
+            banana.addEventListener("mouseover", handleMouseEvent)
+            banana.addEventListener("mouseout", handleMouseEvent)
+            textblock.addEventListener("mouseover", handleDescendantEvent, true)
+            textblock.addEventListener("mouseout", handleDescendantEvent, true)
+
+            function handleDescendantEvent(e) {
+                console.log("123")
+                if (e.type == "mouseover" && e.eventPhase == Event.CAPTURING_PHASE) {
+                    e.target.style.border = "thick solid red"
+                    e.currentTarget.style.border = "thick double black"
+                } else if (e.type == "mouseout" && e.eventPhase == Event.CAPTURING_PHASE) {
+                    e.target.style.removeProperty("border")
+                    e.currentTarget.style.removeProperty("border")
+                }
             }
 
-            // document.getElementById("pressme").onclick = function() {
-            //     document.getElementById("block2").removeEventListener("mouseout", handleMouseOut)
-            // }
             function handleMouseEvent(e) {
                 if (e.type =="mouseover") {
                     e.target.style.background = "white"
@@ -49,7 +59,6 @@
                     e.target.style.removeProperty('background')
                 }
             }
-        
         </script>
     </body>
 </html>
