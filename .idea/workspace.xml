@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32556198-3105-4d5b-95a7-7438d5b71c12" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/JavaScript Guide/index01.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/JavaScript Guide/index02.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index01.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index01.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavaScript Guide/index01.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="744">
               <caret line="388" column="0" lean-forward="false" selection-start-line="388" selection-start-column="0" selection-end-line="388" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index02.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JavaScript Guide/index02.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="580">
+              <caret line="778" column="5" lean-forward="true" selection-start-line="778" selection-start-column="5" selection-end-line="778" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -35,6 +46,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/JavaScript Guide/index01.html" />
+        <option value="$PROJECT_DIR$/JavaScript Guide/index02.html" />
       </list>
     </option>
   </component>
@@ -74,6 +86,11 @@
               <item name="try" type="b2602c69:ProjectViewProjectNode" />
               <item name="try" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="try" type="b2602c69:ProjectViewProjectNode" />
+              <item name="try" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaScript Guide" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -110,12 +127,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519869178946</updated>
-      <workItem from="1519869180553" duration="4845000" />
+      <workItem from="1519869180553" duration="20714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4845000" />
+    <option name="totallyTimeSpent" value="20714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="9" width="1052" height="1050" extended-state="0" />
@@ -155,6 +172,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="744">
           <caret line="388" column="0" lean-forward="false" selection-start-line="388" selection-start-column="0" selection-end-line="388" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript Guide/index02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="778" column="5" lean-forward="true" selection-start-line="778" selection-start-column="5" selection-end-line="778" selection-end-column="5" />
           <folding />
         </state>
       </provider>
