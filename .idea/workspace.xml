@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32556198-3105-4d5b-95a7-7438d5b71c12" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/JavaScript Guide/index02.html" afterPath="$PROJECT_DIR$/JavaScript Guide/index02.html" />
-    </list>
+    <list default="true" id="32556198-3105-4d5b-95a7-7438d5b71c12" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,11 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index02.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index02.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavaScript Guide/index02.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="580">
               <caret line="801" column="5" lean-forward="false" selection-start-line="801" selection-start-column="5" selection-end-line="801" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index03.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JavaScript Guide/index03.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="804">
+              <caret line="102" column="5" lean-forward="true" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -37,6 +44,7 @@
       <list>
         <option value="$PROJECT_DIR$/JavaScript Guide/index01.html" />
         <option value="$PROJECT_DIR$/JavaScript Guide/index02.html" />
+        <option value="$PROJECT_DIR$/JavaScript Guide/index03.html" />
       </list>
     </option>
   </component>
@@ -46,9 +54,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-11" />
-    <option name="y" value="9" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-62" />
+    <option name="y" value="11" />
     <option name="width" value="1052" />
     <option name="height" value="1050" />
   </component>
@@ -118,15 +126,15 @@
       <option name="presentableId" value="Default" />
       <updated>1519869178946</updated>
       <workItem from="1519869180553" duration="21926000" />
-      <workItem from="1519955584767" duration="394000" />
+      <workItem from="1519955584767" duration="4747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22320000" />
+    <option name="totallyTimeSpent" value="26673000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="9" width="1052" height="1050" extended-state="1" />
+    <frame x="-62" y="11" width="1052" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2495069" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -171,6 +179,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="801" column="5" lean-forward="false" selection-start-line="801" selection-start-column="5" selection-end-line="801" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript Guide/index03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="102" column="5" lean-forward="true" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
           <folding />
         </state>
       </provider>
