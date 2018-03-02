@@ -777,6 +777,29 @@
             return x.toUpperCase()
         })
     }
+    {
+        Array.join = Array.join || function(a, sep) {
+            return Array.prototype.join.call(a, sep)
+        }
+        Array.slice = Array.slice || function(a, from, to) {
+            return Array.prototype.slice.call(a, form, to)
+        }
+        Array.map = Array.map || function(a, f, thisArg) {
+            return Array.prototype.map.call(a, f, thisArg)
+        }
+    }
+    {
+        var s = 'test'
+        s.charAt(0)
+        s[1]
+    }
+    {
+        s = 'JavaScript'
+        Array.prototype.join.call(s, ' ')
+        Array.prototype.filter.call(s, function(x) {
+            return x.match(/[^aeiou]/)
+        }).join("")
+    }
 </script>
 </body>
 </html>
