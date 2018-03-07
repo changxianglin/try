@@ -67,6 +67,32 @@ var monkey = {
   feeds: 'bananas',
   breathes: 'air'
 }
+
+function Human(name) {
+  this.name = name
+}
+Human.prototype = monkey
+
+var george = new Human('George')
+// log(monkey.isPrototypeOf(george))
+// log(Object.getPrototypeOf(george).feeds)
+// log(Object.getPrototypeOf(george) === monkey)
+Array.prototype.inArray = function(needle) {
+  for(var i = 0, len = this.length; i < len; i++) {
+    if(this[i] === needle) {
+      return true
+    }
+  }
+  return false
+}
+
+var colors = ['red', 'green', 'blue']
+// log(colors.inArray('red'))
+// log(colors.inArray('yellow'))
+String.prototype.reverse = function() {
+  return Array.prototype.reverse.apply(this.split('')).join('')
+}
+// log('bumblebee'.reverse())
 </script>
   </body>
 </html>

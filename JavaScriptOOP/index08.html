@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>index08</title>
+  </head>
+  <body>
+<script type="text/javascript">
+var log = console.log.bind(console)
+// function extend2(Child, Parent) {
+//   var p = Parent.prototype
+//   var c = Child.prototype
+//   for(var i in p) {
+//     c[i] = p[i]
+//   }
+//   c.uber = p
+// }
+
+function extendCopy(p) {
+  var c = {}
+  for( var i in p) {
+    c[i] = p[i]
+  }
+  c.uber = p
+  return c
+}
+
+var shape = {
+  name: 'Shape',
+  toString: function() {
+    return this.name
+  }
+}
+
+var twoDee = extendCopy(shape)
+twoDee.name = '2D shape'
+twoDee.toString = function() {
+  return this.uber.toString() + ', ' + this.name
+}
+
+var triangle = extendCopy(twoDee)
+triangle.name = 'triangle'
+triangle.getArea = function() {
+  return this.side * this.height / 2
+}
+
+triangle.side = 5
+triangle.height = 10
+// log(triangle.getArea())
+log(triangle.toString())
+</script>
+  </body>
+</html>

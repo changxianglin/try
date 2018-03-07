@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>index13</title>
+  </head>
+  <body>
+<script type="text/javascript">
+function Shape(id) {
+  this.id = id
+}
+Shape.prototype.name = 'shape'
+Shape.prototype.toString = function() {
+  return this.name
+}
+
+function Triangle() {
+  Shape.apply(this, arguments)
+}
+
+Triangle.prototype.name = 'Triangle'
+
+var t = new Triangle(101)
+// console.log(t.name)
+// console.log(t.id)
+// console.log(t.toString())
+
+</script>
+  </body>
+</html>

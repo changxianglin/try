@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>index03</title>
+  </head>
+  <body>
+<script type="text/javascript">
+// var log = function() {
+//   return console.log.apply(console, arguments)
+// }
+var log = console.log.bind(console)
+
+function Dog() {
+  this.tail = true
+}
+
+var benji = new Dog()
+var rusty = new Dog()
+
+Dog.prototype.say = function() {
+  return 'Woof'
+}
+
+// log(benji.say())
+// log(rusty.say())
+// log(benji.constructor === Dog)
+// log(rusty.constructor === Dog)
+
+// for( i in console) {
+//     log(i)
+// }
+Dog.prototype = {
+  paws: 4,
+  hair: true
+}
+
+// log(typeof benji.paws)
+// log(benji.say())
+// log(typeof benji.__proto__say)
+// log(typeof benji.__proto__.paws)
+
+var lucy = new Dog()
+// log(lucy.say())
+// log(lucy.paws)
+// log(typeof lucy.__proto__.say)
+// log(typeof lucy.__proto__.paws)
+
+</script>
+  </body>
+</html>
