@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>index01</title>
+  </head>
+  <body>
+<script type="text/javascript">
+  var dog = {
+    name: 'Benji',
+    talk: function() {
+      alert('Woof, woof')
+    }
+  }
+
+  function Hero(name) {
+    this.name = name
+    this.occupation = 'Ninja'
+    this.whoAreYou = function() {
+      return "I'm " + this.name + "and I'm a " + this.occupation
+    }
+  }
+
+  var h1 = new Hero('Michelangelo')
+  var h2 = new Hero('Donatello')
+  // console.log(h1.whoAreYou())
+  // console.log(h2.whoAreYou())
+
+  function factory(name) {
+    return {
+      name: name
+    }
+  }
+
+  var o = factory('one')
+  // console.log(o.name)
+
+  function C2() {
+    thisa = 1
+    return {b: 2}
+  }
+
+  var c2 = new C2()
+  // console.log(typeof c2.a)
+  // console.log(c2.b)
+  function myfunc(a, b, c) {
+    return true
+  }
+  // console.log(myfunc.length)
+  var ninja = {
+    name: 'Niaja',
+    say: function() {
+      return "I'm a " + this.name
+    }
+  }
+  function F() {}
+  // console.log(F.prototype)
+  F.prototype = ninja
+  var baby_ninja = new F()
+  // console.log(baby_ninja.name)
+  // console.log(baby_ninja.say())
+  function myfunc(a, b, c) {
+    return a + b + c
+  }
+
+  // console.log(myfunc.toString())
+
+  var some_obj = {
+    name: 'Ninja',
+    say: function(who) {
+      return 'Haya  ' + who + ', I am a ' + this.name
+    }
+  }
+
+  // console.log(some_obj.say('Dude'))
+  var my_obj = {name: 'Scripting guru'}
+  // console.log(some_obj.say.call(my_obj, 'Dude'))
+  // console.log(some_obj.say.apply(my_obj, ['Dude']))
+
+  function f() {
+    return arguments
+  }
+  // console.log(f(1, 2, 3))
+  function f() {
+    var args = [].slice.call(arguments)
+    return args.reverse()
+  }
+  // console.log(f(1, 2, 3, 4))
+</script>
+  </body>
+</html>
