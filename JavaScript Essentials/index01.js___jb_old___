@@ -1,0 +1,11 @@
+var log = console.log.bind(console)
+var color1 = 'red'
+var color2 = color1
+
+log(color1)
+log(color2)
+
+color1 = 'blue'
+
+log(color1)
+log(color2)
