@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>index14</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var tree = {}
+      tree.decorate = function() {
+        alert("Make sure the tree won\'t fall")
+      }
+      tree.getDecorate = function(deco) {
+        tree[deco].prototype = this
+        return new tree[deco]
+      }
+
+      tree.ReadBalls = function() {
+        this.decorate = function() {
+          this.ReadBalls = prototype.decorate()
+          alert('Put on some red balls')
+        }
+      }
+      tree.BlueBalls = function() {
+        this.decorate = function() {
+          this.BlueBalls.prototype.decorate()
+          alert('Add blue balls')
+        }
+      }
+      tree.Angel = function() {
+        this.decorate = function() {
+          this.Angel.prototype.decorate()
+          alert('An angel on the top')
+        }
+      }
+
+      tree = tree.getDecorate('BlueBalls')
+      tree = tree.getDecorate('Angle')
+      tree = tree.getDecorate('ReadBalls')
+      console.log(tree.decorate())
+    </script>
+  </body>
+</html>
