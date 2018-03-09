@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32556198-3105-4d5b-95a7-7438d5b71c12" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/JavaScript Essentials/index04.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/JavaScript Essentials/index03.js" afterPath="$PROJECT_DIR$/JavaScript Essentials/index03.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,31 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index01.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index01.js">
+      <file leaf-file-name="index03.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index03.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2280">
-              <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+            <state relative-caret-position="810">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index02.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index02.js">
+      <file leaf-file-name="index04.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index04.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1853">
-              <caret line="203" column="26" lean-forward="true" selection-start-line="203" selection-start-column="26" selection-end-line="203" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index01.js___jb_old___" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index01.js___jb_old___">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="533">
+              <caret line="179" column="10" lean-forward="true" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -59,6 +51,8 @@
         <option value="$PROJECT_DIR$/JavaScript Guide/index03.html" />
         <option value="$PROJECT_DIR$/JavaScript Essentials/index01.js" />
         <option value="$PROJECT_DIR$/JavaScript Essentials/index02.js" />
+        <option value="$PROJECT_DIR$/JavaScript Essentials/index03.js" />
+        <option value="$PROJECT_DIR$/JavaScript Essentials/index04.js" />
       </list>
     </option>
   </component>
@@ -68,7 +62,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-1" />
     <option name="y" value="15" />
     <option name="width" value="1052" />
@@ -89,8 +83,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,7 +95,7 @@
             <path>
               <item name="try" type="b2602c69:ProjectViewProjectNode" />
               <item name="try" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaScript Guide" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaScript Essentials" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -126,17 +120,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.index02.js">
+  <component name="RunManager" selected="Node.js.index04.js">
     <configuration name="index01.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="index01.js" working-dir="$PROJECT_DIR$/JavaScript Essentials" />
     <configuration name="index02.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="index02.js" working-dir="$PROJECT_DIR$/JavaScript Essentials" />
-    <list size="2">
+    <configuration name="index03.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="index03.js" working-dir="$PROJECT_DIR$/JavaScript Essentials" />
+    <configuration name="index04.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="index04.js" working-dir="$PROJECT_DIR$/JavaScript Essentials" />
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Node.js.index01.js" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.index02.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.index03.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.index04.js" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.index02.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.index01.js" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.index04.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.index03.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.index02.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.index01.js" />
       </list>
     </recent_temporary>
   </component>
@@ -156,17 +156,21 @@
       <workItem from="1519869180553" duration="21926000" />
       <workItem from="1519955584767" duration="4826000" />
       <workItem from="1520480966751" duration="7340000" />
-      <workItem from="1520499200536" duration="1790000" />
+      <workItem from="1520499200536" duration="3363000" />
+      <workItem from="1520562833820" duration="2339000" />
+      <workItem from="1520565268857" duration="78000" />
+      <workItem from="1520566399053" duration="2303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35882000" />
+    <option name="totallyTimeSpent" value="42175000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="15" width="1052" height="1050" extended-state="0" />
+    <frame x="-1" y="15" width="1052" height="1050" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2495069" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2495069" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -196,11 +200,33 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index03.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index04.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2700">
+          <caret line="90" column="6" lean-forward="true" selection-start-line="90" selection-start-column="6" selection-end-line="90" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index01.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index01.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2280">
           <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -223,7 +249,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3060">
           <caret line="102" column="5" lean-forward="true" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -239,7 +264,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="804">
           <caret line="102" column="5" lean-forward="false" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -250,26 +274,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index01.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index01.js___jb_old___">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index02.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="203" column="26" lean-forward="true" selection-start-line="203" selection-start-column="26" selection-end-line="203" selection-end-column="26" />
+        <state relative-caret-position="670">
+          <caret line="203" column="26" lean-forward="false" selection-start-line="203" selection-start-column="26" selection-end-line="203" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index01.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="177" column="4" lean-forward="false" selection-start-line="177" selection-start-column="4" selection-end-line="177" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index03.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript Essentials/index04.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="179" column="10" lean-forward="true" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="10" />
           <folding />
         </state>
       </provider>
