@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>toggle</title>
+  </head>
+  <style media="screen">
+    .todo {
+      background-color: red;
+    }
+  </style>
+  <body>
+    <div class="todo">
+      1234567
+    </div>
+    <script type="text/javascript">
+      var main = function() {
+        var div = document.querySelector('div')
+        var tg = document.querySelector('.todo')
+        div.addEventListener('click', function() {
+          console.log('run')
+          tg.classList.toggle("todo")
+        })
+      }
+
+      main()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>fiveBrowser</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var client = function() {
+        var engine = {
+          ie: 0,
+          gecko: 0,
+          webkit: 0,
+          khtml: 0,
+          opera: 0,
+          ver: null
+        }
+        return {
+          engine: engine
+        }
+      }()
+
+      if(client.engine.ie) {
+        console.log('ie')
+      } else if (client.engine.gecko > 1.5) {
+        if(client.engine.ver == '1.8.1') {
+          console.log('other')
+        }
+      }
+    </script>
+  </body>
+</html>
